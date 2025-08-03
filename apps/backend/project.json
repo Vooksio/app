@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/backend",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/backend",
+        "tsConfig": "apps/backend/tsconfig.json",
+        "main": "apps/backend/routes/health.ts",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/backend",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "backend:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["apps/backend/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "options": {
+        "passWithNoTests": true
+      }
+    }
+  }
+}
