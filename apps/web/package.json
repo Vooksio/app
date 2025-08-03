@@ -17,18 +17,11 @@
     "react-router-dom": "6.29.0"
   },
   "devDependencies": {
-    "@types/react": "19.0.0",
-    "@types/react-dom": "19.0.0",
-    "@vitejs/plugin-react": "^4.2.0",
     "@testing-library/react": "16.1.0",
     "@testing-library/dom": "10.4.0",
-    "eslint": "9.32.0",
     "eslint-plugin-react": "7.35.0",
     "eslint-plugin-react-hooks": "5.0.0",
     "eslint-plugin-jsx-a11y": "6.10.1",
-    "typescript": "~5.8.2",
-    "vite": "^6.0.0",
-    "vitest": "^3.0.0",
     "@vitest/ui": "^3.0.0",
     "@vitest/coverage-v8": "^3.0.5"
   }
