@@ -10,7 +10,7 @@
       "options": {
         "outputPath": "dist/apps/backend",
         "tsConfig": "apps/backend/tsconfig.json",
-        "main": "apps/backend/routes/health.ts",
+        "main": "apps/backend/index.ts",
         "assets": [
           {
             "glob": "**/*",

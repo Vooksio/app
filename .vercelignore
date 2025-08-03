@@ -14,7 +14,6 @@ dist
 
 # Source files (not needed in deployment)
 apps/mobile
-packages
 
 # Development tools
 tools
