@@ -26,7 +26,10 @@ docs
 **/*.spec.*
 coverage
 *.config.js
+# exclude generic config but keep vite configs
 *.config.ts
+!vite.config.ts
+!**/vite.config.ts
 vitest.workspace.ts
 
 # IDE
