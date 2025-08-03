@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "name": "vooksio-web",
+  "buildCommand": "pnpm build:web",
+  "outputDirectory": "dist/apps/web",
+  "installCommand": "pnpm install",
+  "devCommand": "pnpm nx serve web",
+  "framework": null,
+  "nodeVersion": "22.x",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

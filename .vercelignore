@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build artifacts (except our target)
+dist
+!dist/apps/web
+
+# Development files
+.nx
+*.log
+.env.local
+.env.*.local
+
+# Source files (not needed in deployment)
+apps/mobile
+apps/backend
+packages
+
+# Development tools
+tools
+docs
+
+# Test files
+**/*.test.*
+**/*.spec.*
+coverage
+*.config.js
+*.config.ts
+vitest.workspace.ts
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# CI
+.github
