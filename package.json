@@ -9,7 +9,7 @@
     "build": "nx run-many --target=build --all",
     "build:all": "pnpm build:web && pnpm build:backend",
     "build:web": "NODE_ENV=development pnpm install && NODE_ENV=production nx build web",
-    "build:backend": "nx build backend",
+    "build:backend": "NODE_ENV=development pnpm install && NODE_ENV=production nx build backend",
     "test": "nx run-many --target=test --all",
     "test:web": "nx test web",
     "lint": "nx run-many --target=lint --all",
