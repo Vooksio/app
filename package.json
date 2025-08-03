@@ -24,11 +24,7 @@
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.8.0",
-    "@nx/eslint": "21.3.11",
-    "@nx/eslint-plugin": "21.3.11",
-    "@nx/js": "21.3.11",
-    "@nx/node": "21.3.11",
-    "@swc-node/register": "~1.9.1",
+
     "@swc/cli": "~0.6.0",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.1.0",
@@ -46,7 +42,6 @@
     "jiti": "2.4.2",
     "jsdom": "~22.1.0",
     "prettier": "^2.6.2",
-    "typescript": "~5.8.2",
     "typescript-eslint": "^8.29.0",
     "vitest": "^3.0.0"
   },
@@ -57,11 +52,17 @@
     "@nx/web": "21.3.11",
     "@nx/react": "21.3.11",
     "@nx/react-native": "21.3.11",
+    "@nx/js": "21.3.11",
+    "@nx/eslint": "21.3.11",
+    "@nx/eslint-plugin": "21.3.11",
+    "@nx/node": "21.3.11",
     "@vitejs/plugin-react": "^4.2.0",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@swc-node/register": "~1.9.1",
     "vite": "^6.0.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "typescript": "~5.8.2"
   },
   "engines": {
     "node": "22.x",
