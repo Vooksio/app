@@ -6,7 +6,7 @@
   "scripts": {
     "build": "nx build backend",
     "dev": "nx serve backend",
-    "start": "node dist/apps/backend/index.js",
+    "start": "node dist/apps/backend/api/index.js",
     "test": "nx test backend",
     "lint": "nx lint backend"
   },
