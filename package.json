@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nx serve web",
-    "dev:mobile": "nx serve mobile", 
+    "dev:mobile": "nx serve mobile",
     "dev:backend": "nx serve backend",
     "build": "nx run-many --target=build --all",
     "build:all": "pnpm build:web && pnpm build:backend",
