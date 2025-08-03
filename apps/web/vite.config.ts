@@ -22,7 +22,7 @@ export default defineConfig(() => ({
   //  plugins: [ nxViteTsPaths() ],
   // },
   build: {
-    outDir: 'dist',
+    outDir: join(__dirname, 'dist'),
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
