@@ -22,13 +22,29 @@ app.use((err: Error, req: express.Request, res: express.Response, next: Function
 
 // Handle all routes through this serverless function
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  // Forward the request to Express
-  return new Promise((resolve, reject) => {
-    app(req, res, (err: any) => {
+  await new Promise<void>((resolve, reject) => {
+    // Convert Vercel's req/res to Express-compatible objects
+    const expressReq = Object.assign(req, {
+      get: (header: string) => req.headers[header],
+      header: (header: string) => req.headers[header],
+      accepts: () => true,
+      acceptsCharsets: () => true,
+      acceptsEncodings: () => true,
+      acceptsLanguages: () => true,
+      range: () => undefined,
+      param: () => undefined,
+      is: () => false,
+    });
+
+    const expressRes = Object.assign(res, {
+      header: (key: string, value: string) => res.setHeader(key, value),
+    });
+
+    app(expressReq as any, expressRes as any, (err: any) => {
       if (err) {
         return reject(err);
       }
-      resolve(undefined);
+      resolve();
     });
   });
 }
