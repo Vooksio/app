@@ -9,13 +9,17 @@
   "env": {
     "NODE_ENV": "production"
   },
+  "outputDirectory": "dist/apps/backend",
   "builds": [
-    { "src": "dist/apps/backend/index.js", "use": "@vercel/node" }
+    { 
+      "src": "./index.ts",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/apps/backend/index.js"
+      "dest": "/index.ts"
     }
   ],
   "headers": [
