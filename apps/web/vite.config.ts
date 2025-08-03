@@ -22,7 +22,7 @@ export default defineConfig(() => ({
   //  plugins: [ nxViteTsPaths() ],
   // },
   build: {
-    outDir: join(__dirname, 'dist'),
+    outDir: join(__dirname, 'apps/web/dist'),
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
@@ -30,7 +30,7 @@ export default defineConfig(() => ({
     },
     rollupOptions: {
       input: {
-        main: join(__dirname, 'index.html'),
+        main: join(__dirname, 'apps/web/index.html'),
       },
     },
   },
