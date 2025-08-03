@@ -63,7 +63,7 @@
   "nx": {},
   "dependencies": {},
   "engines": {
-    "node": ">=22.10.0",
+    "node": "22.x",
     "pnpm": ">=8.0.0"
   }
 }
