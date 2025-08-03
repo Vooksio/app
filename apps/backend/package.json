@@ -1,0 +1,29 @@
+{
+  "name": "@vooksio/backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nx build backend",
+    "dev": "nx serve backend",
+    "start": "node dist/main.js",
+    "test": "nx test backend",
+    "lint": "nx lint backend"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.0",
+    "@types/cors": "^2.8.0",
+    "typescript": "~5.8.2",
+    "ts-node": "^10.9.0",
+    "nodemon": "^3.0.0",
+    "eslint": "9.32.0",
+    "@nx/node": "21.3.11"
+  }
+}
