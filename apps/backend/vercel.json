@@ -10,16 +10,12 @@
     "NODE_ENV": "production"
   },
   "functions": {
-    "index.ts": {
-      "runtime": "nodejs22.x"
+    "api/**/*.ts": {
+      "runtime": "nodejs22.x",
+      "memory": 1024,
+      "maxDuration": 10
     }
   },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
