@@ -24,6 +24,7 @@ docs
 # Test files
 **/*.test.*
 **/*.spec.*
+!**/tsconfig.spec.json
 coverage
 *.config.js
 # exclude generic config but keep vite configs
