@@ -2,7 +2,7 @@
   "name": "@vooksio/backend",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
+
   "scripts": {
     "build": "nx build backend",
     "dev": "nx serve backend",
