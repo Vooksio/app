@@ -1,7 +1,7 @@
 export function App() {
   return (
     <div>
-      <h1>Vooksio Web</h1>
+      <h1>Vooksio Web App</h1>
     </div>
   );
 }
