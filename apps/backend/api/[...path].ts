@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/health', healthRouter);
+app.use('/', healthRouter);
 
 // Error handling
 app.use((err: Error, req: express.Request, res: express.Response, next: Function) => {
