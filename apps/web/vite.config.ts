@@ -30,7 +30,7 @@ export default defineConfig(() => ({
     },
     rollupOptions: {
       input: {
-        main: join(__dirname, '../../dist/apps/web/index.html'),
+        main: join(__dirname, 'index.html'),
       },
     },
   },
