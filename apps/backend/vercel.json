@@ -10,17 +10,14 @@
     "NODE_ENV": "production"
   },
   "functions": {
-    "routes/*.ts": {
-      "runtime": "nodejs22.x"
-    },
-    "routes/**/*.ts": {
+    "index.ts": {
       "runtime": "nodejs22.x"
     }
   },
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/routes/$1"
+      "destination": "/index"
     }
   ],
   "headers": [
