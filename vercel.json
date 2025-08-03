@@ -1,15 +1,5 @@
 {
   "version": 2,
-  "name": "vooksio-web",
-  "buildCommand": "pnpm build:web",
-  "outputDirectory": "dist/apps/web",
-  "installCommand": "pnpm install",
-  "devCommand": "pnpm nx serve web",
-  "framework": null,
-  "nodeVersion": "22.x",
-  "env": {
-    "NODE_ENV": "production"
-  },
   "build": {
     "env": {
       "NODE_ENV": "production"
