@@ -9,7 +9,7 @@
     "start": "nx serve web",
     "test": "nx test web",
     "lint": "nx lint web",
-    "preview": "vite preview"
+    "preview": "nx preview web"
   },
   "dependencies": {
     "react": "19.0.0",
