@@ -1,0 +1,28 @@
+{
+  "name": "@vooksio/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nx build web",
+    "dev": "nx serve web",
+    "start": "nx serve web",
+    "test": "nx test web",
+    "lint": "nx lint web",
+    "preview": "nx preview web"
+  },
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "6.29.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "16.1.0",
+    "@testing-library/dom": "10.4.0",
+    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-react-hooks": "5.0.0",
+    "eslint-plugin-jsx-a11y": "6.10.1",
+    "@vitest/ui": "^3.0.0",
+    "@vitest/coverage-v8": "^3.0.5"
+  }
+}

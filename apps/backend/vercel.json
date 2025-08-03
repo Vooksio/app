@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "name": "vooksio-backend",
+  "buildCommand": "pnpm build:backend",
+  "installCommand": "pnpm install",
+  "devCommand": "pnpm nx serve backend",
+  "framework": null,
+  "nodeVersion": "22.x",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "routes/*.ts": {
+      "runtime": "nodejs22.x"
+    },
+    "routes/**/*.ts": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/routes/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ]
+}
