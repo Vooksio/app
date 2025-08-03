@@ -7,7 +7,5 @@ app.use(cors());
 
 app.use('/health', healthRouter);
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`API listening on port ${port}`);
-});
+// Export the Express app for Vercel
+export default app;
