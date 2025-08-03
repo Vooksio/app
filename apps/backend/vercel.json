@@ -9,13 +9,15 @@
   "env": {
     "NODE_ENV": "production"
   },
-  "functions": {
-    "api/**/*.ts": {
-      "runtime": "nodejs22.x",
-      "memory": 1024,
-      "maxDuration": 10
+  "builds": [
+    { "src": "dist/apps/backend/index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/apps/backend/index.js"
     }
-  },
+  ],
   "headers": [
     {
       "source": "/(.*)",

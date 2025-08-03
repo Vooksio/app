@@ -9,6 +9,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('Subscribe to Vooks');
+});
 app.use('/health', healthRouter);
 
 // Error handling
